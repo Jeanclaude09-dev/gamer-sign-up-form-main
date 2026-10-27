@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Jetbrans-mono;
+  src: url(assets/fonts/jetbrains-mono/jetbrains-mono-variable.ttf);
+}
+
+@font-face {
+  font-family: Orbitron;
+  src: url(assets/fonts/orbitron/orbitron-variable.ttf);
+}
+
+@theme {
+  /*====== Colors ======*/
+
+  /* Neutral */
+
+  --Neutral-950: hsl(214 37% 4%);
+  --color-neutral-900: hsl(210 39% 7%);
+  --color-neutral-800: hsl(211 30% 13%);
+  --color-neutral-700: hsl(211 22% 24%);
+  --color-neutral-600: hsl(210 18% 42%);
+  --color-neutral-500: hsl(211 14% 50%);
+  --color-neutral-400: hsl(211 13% 55%);
+  --color-neutral-300: hsl(211 18% 68%);
+  --color-neutral-100: hsl(208 49% 92%);
+  --color-color-neutral-50: hsl(204 60% 97%);
+
+  /*====== Lime ======*/
+
+  --color-lime-500: hsl(77 90% 59%);
+  --color-lime-700: hsl(77 67% 39%);
+
+  /* Red */
+
+  --color-red-400: hsl(4 100% 74%);
+
+  /* Amber */
+
+  --color-amber-400: hsl(40 100% 65%);
+
+  /* Navy */
+
+  --navy-950: hsl(214 60% 2%);
+
+  /* Transparent */
+
+  --color-lime-alpha-60: hsl(77 90% 59% / 0.6);
+  --color-lime-alpha-40: hsl(77 90% 59% / 0.4);
+  --color-navy-alpha-80: hsl(214 60% 2% / 0.8);
+  --color-navy-alpha-60: hsl(214 60% 2% / 0.6);
+
+  /*====== Typography ======*/
+  --font-jetbrains: "Jetbrans-mono", sans-serif;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
