@@ -15,7 +15,7 @@
 
   /* Neutral */
 
-  --Neutral-950: hsl(214 37% 4%);
+  --color-neutral-950: hsl(214 37% 4%);
   --color-neutral-900: hsl(210 39% 7%);
   --color-neutral-800: hsl(211 30% 13%);
   --color-neutral-700: hsl(211 22% 24%);
@@ -52,12 +52,10 @@
 
   /*====== Typography ======*/
   --font-jetbrains: "Jetbrans-mono", sans-serif;
+  --font-orbitron: "Orbitron", sans-serif, system-ui;
 }
 
-.attribution {
-  font-size: 0.6875rem;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
+.img-bg {
+  background: url(/images/pattern-backdrop.svg) no-repeat right;
+  background-size: 120%;
 }
