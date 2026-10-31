@@ -24,7 +24,7 @@
   --color-neutral-400: hsl(211 13% 55%);
   --color-neutral-300: hsl(211 18% 68%);
   --color-neutral-100: hsl(208 49% 92%);
-  --color-color-neutral-50: hsl(204 60% 97%);
+  --color-neutral-50: hsl(204 60% 97%);
 
   /*====== Lime ======*/
 
@@ -41,7 +41,7 @@
 
   /* Navy */
 
-  --navy-950: hsl(214 60% 2%);
+  --color-navy-950: hsl(214 60% 2%);
 
   /* Transparent */
 

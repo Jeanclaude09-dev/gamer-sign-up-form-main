@@ -1,12 +1,9 @@
-import { useState } from "react";
 import "./App.css";
+import { Form } from "./component/Form";
 import logo from "./assets/images/logo.svg";
 
 function App() {
-  const [count, setCount] = useState(0);
-  const [callSign, setCallSign] = useState("");
-
-  const conditions = [
+  const requirements = [
     {
       condition: "Callsign",
       initial: "Pending",
@@ -49,13 +46,13 @@ function App() {
       <section className="absolute right-0 bg-[url('/images/pattern-backdrop.svg')] bg-no-repeat bg-right" />
 
       {/* grid */}
-      <section className="grid grid-cols-2 max-w-4/5 gap-16">
+      <section className="grid place-items-center grid-cols-2 max-w-4/5 gap-16">
         {/* Left */}
         <article className="text-white">
           <div className="flex justify-between">
             <img src={logo} alt="neoncore logo" />
-            <span className="md:noe text-neutral-300 uppercase font-jetbrains tracking-wider">
-              {count} / 5 ready
+            <span className="block md:hidden text-neutral-300 uppercase font-jetbrains tracking-wider">
+              0 / 5 ready
             </span>
           </div>
           <h1 className="text-7xl font-bold font-orbitron">
@@ -72,15 +69,13 @@ function App() {
               <span>Operator ID</span>
               {/* Dynamic: ready count, then "Provisioned" after success */}
               {/* Dynamic: "Unassigned" until the callsign is valid, then the callsign */}
-              <span className="text-neutral-300 font-orbitron">
-                {callSign == "" ? "Unassigned" : callSign}
-              </span>
+              <span className="text-neutral-300 font-orbitron">Unassigned</span>
             </div>
-            <span>{count} / 5 ready</span>
+            <span>0/ 5 ready</span>
           </div>
 
           <div className="w-full uppercase font-jetbrains">
-            {conditions.map((c) => (
+            {requirements.map((c) => (
               <div className="flex gap-1 justify-between items-center text-neutral-300">
                 <span>{c.condition}</span>
                 <div className="flex-1" />
@@ -92,16 +87,7 @@ function App() {
 
         {/* Right */}
         <article className="flex justify-center items-center ">
-          <section className="bg-neutral-700 p-5">
-            <div className="flex justify-between items-center">
-              <h3>New operator</h3>
-              <p>
-                All <span className="hidden md:flex">fields </span>required
-              </p>
-            </div>
-
-            <form action="submit"></form>
-          </section>
+          <Form />
         </article>
       </section>
     </section>
